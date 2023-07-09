@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <form method="POST">
+        <input type="text" name="text">
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if prediction %}
+        <p>The prediction is: {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
